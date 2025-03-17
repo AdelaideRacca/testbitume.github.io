@@ -113,9 +113,7 @@
         markdown devrait être de confiance, mais si jamais l'asso se trompe dans les permissions de
         ses pages, mieux vaut jouer la prudence. -->
         <!-- Téléchargée depuis https://github.com/cure53/DOMPurify/raw/main/dist/purify.min.js -->
-		<script src="./purify.min.js"></script>		
-
-		
+		<script src="./purify.min.js"></script>
 		<script>
 			async function put_content() {
                 // On extrait le nom du fichier HTML actuel
@@ -127,7 +125,7 @@
                 // On convertit le Markdown en HTML,
                 // On le purifie,
                 // Et on l'insère dans le HTML, dans l'<article> 20 lignes plus haut ↑
-				document.getElementById(('content').innerHTML = DOMPurify.sanitize(marked.parse(markdown));
+				document.getElementById('content').innerHTML = DOMPurify.sanitize(marked.parse(markdown));
 			}
 			put_content();
 		</script>
