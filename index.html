@@ -121,21 +121,6 @@
                 // On extrait le nom du fichier HTML actuel
 				const url = window.location.pathname;
 				const filename = url.substring(url.lastIndexOf('/') + 1);
-		// On envoie une requête préliminaire
-				var invocation = new XMLHttpRequest();
-				var adresse = 'https://md.picasoft.net/adelaide-index.html';
-				var body = '<?xml version="1.0"?><personne><nom>test-bitume</nom></personne>';
-				
-				function callOtherDomain(){
-				  if(invocation)
-				    {
-				      invocation.open('POST', adresse, true);
-				      invocation.setRequestHeader('X-PINGOTHER', 'pingpong');
-				      invocation.setRequestHeader('Content-Type', 'application/xml');
-				      invocation.onreadystatechange = handler;
-				      invocation.send(body);
-				    }
-				}
                 // On va télécharger le contenu de la page Hedgedoc correspondante
 				const response = await fetch(`https://md.picasoft.net/adelaide-${filename}/download`);
 				const markdown = await response.text();
