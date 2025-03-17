@@ -114,6 +114,20 @@
         ses pages, mieux vaut jouer la prudence. -->
         <!-- Téléchargée depuis https://github.com/cure53/DOMPurify/raw/main/dist/purify.min.js -->
 		<script src="./purify.min.js"></script>
+	<!-- Test du CORS -->
+		<script>
+			var invocation = new XMLHttpRequest();
+			var url = "https://md.picasoft.net/adelaide/";
+
+			function callOtherDomain() {
+			  if (invocation) {
+			    invocation.open("GET", url, true);
+			    invocation.onreadystatechange = handler;
+			    invocation.send();
+			  }
+			}
+		</script>
+		
 		<script>
 			async function put_content() {
                 // On extrait le nom du fichier HTML actuel
