@@ -125,7 +125,7 @@
                 // On convertit le Markdown en HTML,
                 // On le purifie,
                 // Et on l'insère dans le HTML, dans l'<article> 20 lignes plus haut ↑
-				document.getElementById('content').innerHTML = DOMPurify.sanitize(marked.parse(markdown));
+				document.get('content').innerHTML = DOMPurify.sanitize(marked.parse(markdown));
 			}
 			put_content();
 		</script>
