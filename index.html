@@ -123,13 +123,13 @@
 				const filename = url.substring(url.lastIndexOf('/') + 1);
 		// On envoie une requête préliminaire
 				var invocation = new XMLHttpRequest();
-				var url = 'https://md.picasoft.net/adelaide-index.html';
+				var adresse = 'https://md.picasoft.net/adelaide-index.html';
 				var body = '<?xml version="1.0"?><personne><nom>test-bitume</nom></personne>';
 				
 				function callOtherDomain(){
 				  if(invocation)
 				    {
-				      invocation.open('POST', url, true);
+				      invocation.open('POST', adresse, true);
 				      invocation.setRequestHeader('X-PINGOTHER', 'pingpong');
 				      invocation.setRequestHeader('Content-Type', 'application/xml');
 				      invocation.onreadystatechange = handler;
