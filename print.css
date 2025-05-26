@@ -1,0 +1,79 @@
+@page {
+  size: 148mm 210mm;
+  margin: 8mm;
+}
+@page :left{
+  @bottom-left {
+    content: counter(page);
+  }
+}
+@page :right{
+  @bottom-right {
+    content: counter(page);
+  }
+}
+
+@page macouverture {
+  margin: 0;
+  background: black;
+  color: red;
+  @bottom-right { content: none; }
+  @bottom-left { content: none; }
+}
+
+/* -- CHANGEMENT DE PAGE ---------------------------- */
+h1 {
+  break-before: page;
+}
+
+/* -- TYPOGRAPHIE ----------------------------------- */
+
+@font-face {
+    font-family: 'Supersuper Regular';
+    src: url('font/supersuper-Regular.woff2') format('woff2'),
+        url('font/supersuper-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Eau Sans Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Sans Book'), url('font/eau_sans_book.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Eau Sans Book Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Sans Book Oblique'), url('font/eau_sans_book_obl.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Eau Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Sans Bold'), url('font/eau_sans_bold.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Eau Sans Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Sans Bold Oblique'), url('font/eau_sans_bold_obl.woff') format'woff');
+    }
+
+body {
+  font-size: 9pt;
+  font-family: 'Eau Sans Book';
+  line-height: 12pt;
+}
+
+em {
+  font-family: 'Eau Sans Book Oblique';
+}
+
+strong {
+  font-family: 'Eau Sans Bold';
+}
+
+h1, h2, h3 {
+  font-family: 'Supersuper Regular';
+}
