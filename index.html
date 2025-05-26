@@ -1,136 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="./favicon.ico">
-	<title>Test Bitume</title>
-	<style>
-		html {
-			font-family: Gill Sans, Aller, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-			line-height: 1.5;
-		}
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Projet.PDF | Je suis moi, qui est-tu?</title>
 
-		html,
-		body {
-			margin: 0;
-		}
 
-		main {
-			max-width: 900px;
-			min-height: 100vh;
-		}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8">
+        function run() {
+            var text = document.getElementById('pad-content').innerHTML,
+                target = document.getElementById('document'),
+                converter = new showdown.Converter(),
+                html = converter.makeHtml(text);
+            target.innerHTML = html;
+        }
+        $(document).ready(function(){ 
+            $("#pad-content").load($("#pad-content").attr("data-md"), function(){
+		run();
+		window.setTimeout(function(){
+			$.getScript("js/paged.polyfill.js", function(data, textStatus, jqxhr) {})
+			});
+		}); 
+        });
+    </script>
 
-		img {
-			display: block;
-			max-width: 100%;
-			height: auto;
-		}
+    <!-- This is the default stylesheet of paged.js -->
+    <style type="text/css" media="screen">:root{--color-background:whitesmoke;--color-pageBox:#666;--color-paper:white;--color-marginBox:transparent}@media screen{body{background-color:var(--color-background)}.pagedjs_pages{display:flex;width:calc(var(--pagedjs-width) * 2);flex:0;flex-wrap:wrap;margin:0 auto}.pagedjs_page{background-color:var(--color-paper);box-shadow:0 0 0 1px var(--color-pageBox);margin:0;flex-shrink:0;flex-grow:0;margin-top:10mm}.pagedjs_first_page{margin-left:var(--pagedjs-width)}.pagedjs_page:last-of-type{margin-bottom:10mm}.pagedjs_margin-bottom,.pagedjs_margin-bottom-center,.pagedjs_margin-bottom-left,.pagedjs_margin-bottom-left-corner-holder,.pagedjs_margin-bottom-right,.pagedjs_margin-bottom-right-corner-holder,.pagedjs_margin-left,.pagedjs_margin-left-bottom,.pagedjs_margin-left-middle,.pagedjs_margin-left-top,.pagedjs_margin-right,.pagedjs_margin-right-bottom,.pagedjs_margin-right-middle,.pagedjs_margin-right-top,.pagedjs_margin-top,.pagedjs_margin-top-center,.pagedjs_margin-top-left,.pagedjs_margin-top-left-corner-holder,.pagedjs_margin-top-right,.pagedjs_margin-top-right-corner-holder{box-shadow:0 0 0 1px inset var(--color-marginBox)}}</style>
 
-		a {
-			color: inherit;
-			text-decoration: underline;
-		}
+    <!-- LA FEUILLE DE STYLE EN DUR -->
+    <link href="print.css" rel="stylesheet" text="text/css">
 
-		nav a {
-			text-decoration: inherit;
-			font-weight: 600;
-			color: #027d00;
-		}
-
-		.w-full {
-			width: 100%;
-		}
-
-		.flex {
-			display: flex;
-			flex-direction: row;
-		}
-
-		.flex.center {
-			justify-content: center;
-		}
-
-		article h1 {
-			font-weight: 800;
-			font-size: 2.25em;
-			margin-top: 0;
-			margin-bottom: 0.8888889em;
-			line-height: 1.1111111;
-		}
-
-		article h2 {
-			font-weight: 700;
-			font-size: 1.5em;
-			margin-top: 2em;
-			margin-bottom: 1em;
-			line-height: 1.3333333;
-		}
-
-		article h3 {
-			font-weight: 600;
-			font-size: 1.25em;
-			margin-top: 1.6em;
-			margin-bottom: 0.6em;
-			line-height: 1.6;
-		}
-
-		article h4 {
-			font-weight: 600;
-			margin-top: 1.5em;
-			margin-bottom: 0.5em;
-			line-height: 1.5;
-		}
-
-		article img {
-			margin-top: 2em;
-			margin-bottom: 2em;
-		}
-	</style>
+     <!-- As the markdown pad is loaded then converted to html, the following line hide the markdown version -->
+     <style type="text/css" media="all">#pad-content{display: none;}</style>
+	
 </head>
+<body>
 
-<body class="w-full flex center" style="background-color: #lacouleurquetuveux">
-    <!-- Limiter la largeur du contenu -->
-	<main class="w-full" style="max-width: 900px; background-color: #fff">
+    <!-- CHANGE THE URL OF YOUR MARKDOWN CONTENT PAD BELOW -->
+    <div data-md="https://md.picasoft.net/bitume-25-spectacles/download" id="pad-content"></div>
+    
+    <div id="document"></div>
 
-		<header class="flex">
-            <!-- Logo, etc-->
-		</header>
-
-        <nav style="font-size: 1.2em">
-            <a href="./index.html">Accueil</a>
-            <a href="./news.html">News</a>
-            <!-- Autres pages -->
-        </nav>
-
-		<article id="content" style="margin: 2em"></article>
-
-        <!-- La librairie qui va convertir le markdown en html -->
-        <!-- Téléchargée depuis https://cdn.jsdelivr.net/npm/marked/marked.min.js -->
-		<script src="./marked.min.js"></script>
-        <!-- La librairie qui va supprimer les éventuels cochonneries de hackers. Le contenu
-        markdown devrait être de confiance, mais si jamais l'asso se trompe dans les permissions de
-        ses pages, mieux vaut jouer la prudence. -->
-        <!-- Téléchargée depuis https://github.com/cure53/DOMPurify/raw/main/dist/purify.min.js -->
-		<script src="./purify.min.js"></script>
-		<script>
-			async function put_content() {
-                // On extrait le nom du fichier HTML actuel
-				const url = window.location.pathname;
-				const filename = url.substring(url.lastIndexOf('/') + 1);
-                // On va télécharger le contenu de la page Hedgedoc correspondante
-				const response = await fetch(`https://md.picasoft.net/adelaide-${filename}/download`);
-				const markdown = await response.text();
-                // On convertit le Markdown en HTML,
-                // On le purifie,
-                // Et on l'insère dans le HTML, dans l'<article> 20 lignes plus haut ↑
-				document.getElementById('content').innerHTML = DOMPurify.sanitize(marked.parse(markdown));
-			}
-			put_content();
-		</script>
-
-	</main>
 </body>
-
 </html>
