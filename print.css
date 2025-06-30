@@ -26,6 +26,34 @@ h1 {
   break-before: page;
 }
 
+/* -- Image double page ---------------------------- */
+
+.doublepage{
+        page-break-before: left;
+        page: doublepage;
+      }
+      .doublepage img{
+        page-break-after: page;
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+        top: calc(-1 * var(--pagedjs-margin-top) - var(--pagedjs-bleed-top));
+        left: calc(-1 * var(--pagedjs-margin-left) - var(--left-offset));
+        height: calc(var(--pagedjs-pagebox-height) + var(--pagedjs-bleed-top) + var(--pagedjs-bleed-bottom)); 
+        width: calc(var(--pagedjs-pagebox-width) + var(--sidebleed));
+        object-position: var(--object-position) 50% ;
+      }
+      @page doublepage:left { 
+        --object-position:0; 
+        --sidebleed: var(--pagedjs-bleed-left);
+        --left-offset: var(--pagedjs-bleed-left);
+      }
+      @page doublepage:right { 
+        --object-position: calc(-1 * var(--pagedjs-pagebox-width)); 
+        --sidebleed: calc(var(--pagedjs-bleed-right) + var(--pagedjs-bleed-left));
+        --left-offset: var(--pagedjs-bleed-right);
+      }
+
 /* -- TYPOGRAPHIE ----------------------------------- */
 
 @font-face {
