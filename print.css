@@ -75,6 +75,13 @@ h1 {
 }
 
 @font-face {
+    font-family: 'Frat';
+    src: url('font/Frat.woff') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Eau Sans Book';
     font-style: normal;
     font-weight: normal;
