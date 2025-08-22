@@ -1,0 +1,62 @@
+/* ---------- Couverture -------------- */
+
+@page :first {
+  img {display: none !important;}
+  background-image: 
+    url("https://md.picasoft.net/uploads/c71e8e41-4cf4-4d9b-96e8-8dd1b76f19e8.jpg");
+  background-size: cover;
+  background-position: center;
+  @bottom-right { content: none }
+}
+
+
+/* ---------- Colonnes -------------- */
+ #document {
+  column-count: 2;
+  column-gap: 4mm;
+}
+
+h1 {
+  column-span: all;
+}
+
+
+h1 {
+  font-size: 100pt;
+}
+
+#bitume2025 ~ p {
+display: none;
+}
+#bitume2025 ~ h6 {
+display: none;
+}
+#bitume2025 ~ h5 {
+display: none;
+}
+#bitume2025 ~ h4 {
+display: none;
+}
+#bitume2025 ~ h3 {
+display: none;
+}
+#bitume2025 ~ h2 {
+display: none;
+}
+h1#bitume2025 {
+display: none;
+}
+
+#bitume2025 ~ .alert {
+display: none;
+}
+
+h1#spectacles {
+display: none;
+}
+
+
+#mentionslgales ~ p {
+  font-size: 4pt;
+  line-height: 5pt;
+}

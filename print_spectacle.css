@@ -1,0 +1,44 @@
+#document {margin-left: 45mm;}
+
+h2, h3, #before, #before ~ h5, #engoguetteboussires + p {
+    margin-left: -45mm;
+  }
+
+h3 {
+    font-size: 12pt;
+  }
+
+h4{
+    margin-left: -45mm;
+    margin-top: 0;
+    float: left;
+    width: 41mm;
+    font-size: 8.5pt;
+    text-transform: uppercase;
+  }
+
+p img {
+  width: 86mm;
+    height: 40mm;
+  margin-top: -11.33px;
+  }
+
+em {
+  display: block;
+  margin-top: 11.5pt;
+  }
+
+strong{ 
+    display: block;
+    font-family: off;
+    margin-bottom: 11.5pt;
+    font-size: 10.5pt;
+    line-height: 1.2;
+  }
+
+strong >> em {
+  display: block !important;
+  margin-top: 11.5pt !important;
+  font-size: 10.5pt !important;
+  line-height: 1.2 !important;
+}

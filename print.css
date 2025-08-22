@@ -6,7 +6,7 @@
 
 @page:left {
   bleed: 6mm 0cm 6mm 6mm;
-  @bottom-left {
+  @bottom-right {
     content: counter(page);
   }
 }
@@ -17,179 +17,12 @@
   }
 }
 
-@page :first {
-  img {display: none !important;}
-  background-image: 
-    url("https://md.picasoft.net/uploads/c71e8e41-4cf4-4d9b-96e8-8dd1b76f19e8.jpg");
-  background-size: cover;
-  background-position: center;
-  @bottom-right { content: none }
+
+h1 + h2 {
+  margin-top: -16pt;
 }
 
 
-/* ---------- Colonnes -------------- */
- /*#document {
-  column-count: 2;
-  column-gap: 4mm;
-}
-
-h1 {
-  column-span: all;
-}*/
-
-@page :nth(8) {  
-  margin-left: 53mm;
-  h2, h3 {
-    margin-left: -45mm;
-  }
-  h3 {
-    font-size: 12pt;
-  }
-  h4{
-    margin-left: -45mm;
-    margin-top: 0;
-    float: left;
-    width: 41mm;
-    font-size: 8.5pt;
-    text-transform: uppercase;
-  }
-  p img {
-  width: 86mm;
-    height: 40mm;
-  margin-top: -11.33px;
-  }
-  strong, em {
-  display: block;
-  margin-top: 11.5pt;
-  }
-  strong{ 
-    font-family: off;
-  }
-}
-
-@page :nth(9) {  
-  margin-left: 53mm;
-  h2, h3 {
-    margin-left: -45mm;
-  }
-  h3 {
-    font-size: 17pt;
-  }
-  h4{
-    margin-left: -45mm;
-    margin-top: 0;
-    float: left;
-    width: 41mm;
-    font-size: 8.5pt;
-    text-transform: uppercase;
-  }
-  p img {
-  width: 86mm;
-  height: 40mm;
-  margin-top: -11.33px;
-  }
-  strong, em {
-  display: block;
-  margin-top: 11.5pt;
-  }
-}
-
-
-
-
-/* @page :nth(8) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-}
-
-@page :nth(9) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-}
-
-@page :nth(10) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-}
-
-@page :nth(11) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-}
-
-@page :nth(12) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-}
-
-@page :nth(13) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-}
-
-@page :nth(14) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-}
-
-@page :nth(15) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-}
-
-@page :nth(18) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-}
-
-@page :nth(19) {
- p img {
-  width: 64mm;
-  height: 75mm;
-  margin-top: -11.33px;
-  }
-} */
-
-
-/* #dito + p {
-    column-count: 2;
-  }
-
-#granvelle ~ p {
-     column-count: 2;
-   }
-
-h6 + p {
-     column-count: 2;
-   }
-*/
 
 h3 + h2 {
   margin-top: -16pt;
