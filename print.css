@@ -129,17 +129,14 @@ strong {
 h1 {
   font-family: 'Off';
   text-transform: uppercase;
-}
-
-h1 {
-  font-size: 30pt;
-  line-height: 32pt;
+  font-size: 18pt;
+  line-height: 20pt;
 }
 
 h2 {
-    font-size: 22pt;
-    line-height: 25pt;
-    font-family: 'Off';
+    font-size: 25pt;
+    line-height: 27pt;
+    font-family: 'Frat';
     text-transform: uppercase;
 
 }

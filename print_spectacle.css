@@ -42,3 +42,7 @@ strong >> em {
   font-size: 10.5pt !important;
   line-height: 1.2 !important;
 }
+
+#spectacles ~ h3 {
+  margin-top: 0;
+}
