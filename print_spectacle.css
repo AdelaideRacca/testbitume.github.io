@@ -1,46 +1,70 @@
 #document {margin-left: 45mm;}
 
-h2, h3, #before, #before ~ h5, #engoguetteboussires + p {
+h1, h2, h3, h4, h5, #engoguetteboussires + p {
     margin-left: -45mm;
   }
 
-h3 {
-    font-size: 12pt;
-  }
+h4 {
+  margin-top: 0;
+  padding-top: 0;
+}
 
-h4{
-    margin-left: -45mm;
+h5{
     margin-top: 0;
     float: left;
     width: 41mm;
-    font-size: 8.5pt;
     text-transform: uppercase;
   }
 
+
+p {
+    border-left: 1pt solid black;
+    padding: 11.5pt 0 11.5pt 11.5pt;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#engoguetteboussires + p {
+    border-left: 0;
+    padding-left: 0;
+
+}
+
+h1#spectacles + h3, h4:first-child {
+    border-top: 0 !important;
+}
+
 p img {
-  width: 86mm;
-    height: 40mm;
-  margin-top: -11.33px;
+  width: 86.7mm;
+  height: 38mm;
+  margin: -11.5pt 0 -17.25pt -11.5pt;
   }
+
+p + h4 {
+    border-top: 1pt black solid;
+    margin-top: 0;
+}
+
+p:last-child {
+  padding-bottom: 0;
+}
 
 em {
   display: block;
-  margin-top: 11.5pt;
+  padding-top: 5.75pt;
   }
 
 strong{ 
-    display: block;
-    font-family: off;
-    margin-bottom: 11.5pt;
-    font-size: 10.5pt;
-    line-height: 1.2;
-  }
+  display: block;
+  font-family: 'Roboto Condensed';
+  text-transform: uppercase;
+  font-size: 9.5pt;
+  padding-bottom: 5.75pt;
+}
 
 strong >> em {
   display: block !important;
-  margin-top: 11.5pt !important;
-  font-size: 10.5pt !important;
-  line-height: 1.2 !important;
+
 }
 
 #spectacles ~ h3 {
