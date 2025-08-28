@@ -18,15 +18,7 @@
 }
 
 
-h1 + h2 {
-  margin-top: -16pt;
-}
 
-
-
-h3 + h2 {
-  margin-top: -16pt;
-}
 
 #bitume2025 ~ p {
 display: none;
@@ -183,9 +175,23 @@ h5 {
 }
 
 
+h1 + h2 {
+  margin-top: -16pt;
+}
 
+
+
+h3 + h2 {
+  margin-top: -16pt;
+}
+
+p {
+  margin: 0;
+}
 
 /* -- COULEURS ----------------------------------- */
+
+/* h1:nth-of-type(n)*/
 
 @page :nth(2){
   h1, h2, h3, strong {

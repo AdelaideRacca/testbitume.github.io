@@ -1,6 +1,6 @@
 #document {margin-left: 45mm;}
 
-h1, h2, h3, h4, h5, #engoguetteboussires + p {
+h1, h2, h3, h4, h5, #engoguetteboussires + p, #before + p:has(img) {
     margin-left: -45mm;
   }
 
@@ -30,6 +30,10 @@ p {
 
 }
 
+#engoguetteboussires ~ p ~ img {
+    border: 10px red solid;
+}
+
 h1#spectacles + h3, h4:first-child {
     border-top: 0 !important;
 }
@@ -37,12 +41,13 @@ h1#spectacles + h3, h4:first-child {
 p img {
   width: 86.7mm;
   height: 38mm;
-  margin: -11.5pt 0 -17.25pt -11.5pt;
-  }
+  object-fit: cover;
+  image-resolution: 300dpi;  
+}
 
-p + h4 {
-    border-top: 1pt black solid;
-    margin-top: 0;
+
+p:has(img) {
+  padding: 0;
 }
 
 p:last-child {

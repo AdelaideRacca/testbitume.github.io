@@ -16,13 +16,16 @@
   column-gap: 4mm;
 }
 
-h1 {
+h1, h2 {
   column-span: all;
 }
 
 
 h1 {
   font-size: 100pt;
+}
+h2 {
+  padding-bottom: 11.5pt;
 }
 
 #bitume2025 ~ p {
