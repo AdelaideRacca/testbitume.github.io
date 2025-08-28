@@ -24,6 +24,9 @@ p {
     margin-bottom: 0;
 }
 
+
+/* --------- Page à page -------- */
+
 #engoguetteboussires + p {
     border-left: 0;
     padding-left: 0;
@@ -35,6 +38,10 @@ p {
     margin-left: -45mm;
     border-left: 0;
     height: 44mm;
+  }
+  h2 {
+    font-size: 35pt;
+    line-height: 45pt;
   }
   img {
     width: 66mm;
