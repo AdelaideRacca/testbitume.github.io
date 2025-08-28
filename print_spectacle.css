@@ -1,9 +1,5 @@
 #document {margin-left: 45mm;}
 
-h3:nth-of-type(3) {
-  break-before: page;
-}
-
 h1, h2, h3, h4, h5, #engoguetteboussires + p, #before + p:has(img) {
     margin-left: -45mm;
   }
@@ -63,26 +59,25 @@ p:has(img) {
   height: 38mm;
 }
 
-/*p:last-child {
+p:last-child {
   padding-bottom: 0;
-}*/
+}
 
-em {
+h5 em {
   display: block;
   padding-top: 5.75pt;
   font-family: 'Roboto Condensed';
   }
 
-strong{ 
+h5 strong{ 
   display: block;
   font-family: 'Roboto Condensed';
   text-transform: uppercase;
   padding-bottom: 5.75pt;
 }
 
-strong >> em {
-  display: block !important;
-
+h5 strong >> em {
+  display: block !important;a
 }
 
 #spectacles ~ h3 {

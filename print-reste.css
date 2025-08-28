@@ -10,56 +10,45 @@
 }
 
 
-/* ---------- Colonnes -------------- */
+/* ---------- Colonnes -------------- 
  #document {
   column-count: 2;
   column-gap: 4mm;
+
 }
 
-h1, h2 {
-  column-span: all;
-}
+*/
 
-
-h1 {
-  font-size: 100pt;
-}
-h2 {
+p {
+  padding-top: 11.5pt;
   padding-bottom: 11.5pt;
 }
 
-#bitume2025 ~ p {
-display: none;
-}
-#bitume2025 ~ h6 {
-display: none;
-}
-#bitume2025 ~ h5 {
-display: none;
-}
-#bitume2025 ~ h4 {
-display: none;
-}
-#bitume2025 ~ h3 {
-display: none;
-}
-#bitume2025 ~ h2 {
-display: none;
-}
-h1#bitume2025 {
-display: none;
-}
+/*h1 ~ p {
+  padding-top: 0;
+}*/
 
-#bitume2025 ~ .alert {
-display: none;
-}
 
-h1#spectacles {
-display: none;
+
+h2 {
+  padding-top: 17.25pt;
+  padding-bottom: 11.5pt;
 }
 
 
 #mentionslgales ~ p {
   font-size: 3.5pt;
   line-height: 5pt;
+}
+
+@page :nth(9){
+  img {
+ object-fit: cover;
+ width: 45mm;
+ height: 28.4mm;
+ margin-left: -45mm;
+  }
+
+  p:has(img) { 
+    float: left;
 }
