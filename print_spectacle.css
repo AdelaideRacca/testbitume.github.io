@@ -1,5 +1,9 @@
 #document {margin-left: 45mm;}
 
+h3:nth-of-type(3) {
+  break-before: page;
+}
+
 h1, h2, h3, h4, h5, #engoguetteboussires + p, #before + p:has(img) {
     margin-left: -45mm;
   }
@@ -27,27 +31,36 @@ p {
 #engoguetteboussires + p {
     border-left: 0;
     padding-left: 0;
-
+    padding-top: 5.75pt;
 }
 
-#engoguetteboussires ~ p ~ img {
-    border: 10px red solid;
+@page :nth(2){
+  p:has(img) {
+    margin-left: -45mm;
+    border-left: 0;
+    height: 44mm;
+  }
+  img {
+    width: 66mm;
+    height: 45mm;
+    float: left;
+  }
 }
 
-h1#spectacles + h3, h4:first-child {
+/*h1#spectacles + h3, h4:first-child {
     border-top: 0 !important;
-}
+}*/
 
 p img {
   width: 86.7mm;
   height: 38mm;
   object-fit: cover;
-  image-resolution: 300dpi;  
 }
 
 
 p:has(img) {
   padding: 0;
+  height: 38mm;
 }
 
 p:last-child {
@@ -57,13 +70,13 @@ p:last-child {
 em {
   display: block;
   padding-top: 5.75pt;
+  font-family: 'Roboto Condensed';
   }
 
 strong{ 
   display: block;
   font-family: 'Roboto Condensed';
   text-transform: uppercase;
-  font-size: 9.5pt;
   padding-bottom: 5.75pt;
 }
 
@@ -74,4 +87,164 @@ strong >> em {
 
 #spectacles ~ h3 {
   margin-top: 0;
+}
+
+
+/* ------------ RECADRAGE IMAGES -------------------*/
+
+#boussieres1 img {
+  object-position: 50% 64%;
+}
+
+#boussieres2 img {
+  object-position: 50% 46%;
+}
+
+h4#destine ~ p img {
+  object-position: 0 0;
+}
+
+h4#voxpopulispectacle ~ p img {
+  object-position: 50% 57%;
+}
+
+h4#allezvenezvousassoirmatable ~ p img {
+  object-position: 50% 52%;
+}
+
+h4#bingo ~ p img {
+  object-position: 0 0;
+  border: 10px solid blue;
+}
+
+h4#brutusyukus ~ p img {
+  object-position: 50% 43%;
+}
+
+h4#fabriceguyloprarock ~ p img {
+  object-position: 50% 14%;
+}
+
+h4#rondpointoulavisiondemile ~ p img {
+  object-position: 50% 28%;
+}
+
+h4#baouli ~ p img {
+  object-position: 50% 12%;
+}
+
+h4#radiobanane ~ p img {
+  object-position: 50% 50%;
+}
+
+h4#spenamplulla ~ p img {
+  object-position: 50% 26%;
+}
+
+h4#entrebicepsetpaillettes ~ p img {
+  object-position: 50% 72%;
+}
+
+h4#djlowcost ~ p img {
+  object-position: 50% 53%;
+}
+
+h4#djrapzouz ~ p img {
+  object-position: 50% 58%;
+}
+
+h4#lafterdubitume ~ p img {
+  object-position: 50% 52%;
+}
+
+h4#lautrechose ~ p img {
+  object-position: 50% 12%;
+}
+
+h4#lastrandjabanda ~ p img {
+  object-position: 50% 0%;
+}
+
+h4#hauteactivitvielongue ~ p img {
+  object-position: 50% 0%;
+}
+
+h4#mesamours ~ p img {
+  object-position: 50% 76%;
+}
+
+h4#gagarineisnotdead ~ p img {
+  object-position: 50% 51%;
+}
+
+h4#lessoufflettes ~ p img {
+  object-position: 50% 6%;
+}
+
+h4#amours ~ p img {
+  object-position: 50% 9%;
+}
+
+h4#jouir ~ p img {
+  object-position: 50% 10%;
+}
+
+h4#rose ~ p img {
+  object-position: 50% 60%;
+}
+
+h4#orchestrenationaldedance ~ p img {
+  object-position: 50% 45%;
+}
+
+h4#hommesintgresbruneexpriencevivre ~ p img {
+  object-position: 50% 39%;
+}
+
+h4#lesassoiffs ~ p img {
+  object-position: 50% 46%;
+}
+
+h4#queltoupet ~ p img {
+  object-position: 50% 66%;
+}
+
+h4#autostop ~ p img {
+  object-position: 50% 34%;
+}
+
+h4#lamerveilleuseettrpidantehistoiredufestivaldubitumeetdesplumes ~ p img {
+  object-position: 0 0;
+  border: 10px solid red;
+}
+
+h4#radiotutti ~ p img {
+  object-position: 50% 60%;
+  border: 0;
+
+}
+
+h4#princessediane ~ p img {
+  object-position: 50% 53%;
+}
+
+h4#tumereconnais ~ p img {
+  object-position: 50% 3%;
+}
+
+h4#cestunbeaujour ~ p img {
+  object-position: 50% 13%;
+}
+
+h4#yousg ~ p img {
+  object-position: 0 0;
+  border: 10px solid blue;
+}
+
+h4#zbong ~ p img {
+  object-position: 50% 24%;
+}
+
+h4#ghosted ~ p img {
+  object-position: 50% 34%;
 }

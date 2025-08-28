@@ -6,7 +6,7 @@
 
 @page:left {
   bleed: 4mm 0cm 4mm 4mm;
-  @bottom-right {
+  @bottom-left {
     content: counter(page);
   }
 }
@@ -46,8 +46,11 @@ display: none;
 display: none;
 }
 
-h1#spectacles {
+h1#spectacles, h1#spectacles2, h1#spectacles3, h1#spectacles4, h1#spectacles5, h1#spectacles6, h1#spectacles7, h1#spectacles8, h1#spectacles9, h1#spectacles10, h1#spectacles11, h1#spectacles12, h1#spectacles13, h1#spectacles14, h1#spectacles15, h1#spectacles16, h1#spectacles17, h1#spectacles18, h1#spectacles19, h1#spectacles20 {
 display: none;
+padding: 0;
+margin: 0;
+border: 0;
 }
 
 
@@ -132,6 +135,7 @@ h1 {
   font-size: 18pt;
   line-height: 20pt;
   border-bottom: 1pt solid black;
+  padding-top: 0 !important;
   padding-bottom: 5.75pt;
   margin-top: 0;
 }
@@ -147,7 +151,6 @@ h3 {
     text-transform: uppercase;
     font-family: 'Roboto Condensed';
     font-size: 12pt;
-    border-top: 1pt black solid;
     padding-top: 11pt;
     margin-top: 0;
     line-height: 11.5pt;
@@ -172,6 +175,7 @@ h5 {
     margin-bottom: 0;
     margin-top: 0;
     padding-top: 11.5pt;
+    font-family: 'Roboto Condensed';
 }
 
 
@@ -183,6 +187,10 @@ h1 + h2 {
 
 h3 + h2 {
   margin-top: -16pt;
+}
+
+h3 + h4 {
+  padding-top: 0 !important;
 }
 
 p {
