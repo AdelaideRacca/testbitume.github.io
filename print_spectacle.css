@@ -63,9 +63,9 @@ p:has(img) {
   height: 38mm;
 }
 
-p:last-child {
+/*p:last-child {
   padding-bottom: 0;
-}
+}*/
 
 em {
   display: block;
