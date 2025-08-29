@@ -83,13 +83,13 @@ h2 {
   padding-bottom: 11.5pt;
 }
 
-#scnographie ~ p img {
+#scnographie ~ p img, #placegranvellecurbattantdufestival-1 ~ p img {
   height: 110mm;
   object-position: 50% 0%;
   margin-top: 11.5pt;
 }
 
-#placegranvellecurbattantdufestival ~ p, #placegranvellecurbattantdufestival-1 ~ p, #placegranvellecurbattantdufestival-2 ~ p, #placegranvellecurbattantdufestival-3 ~ p, #scnographie ~ p {
+#placegranvellecurbattantdufestival ~ p, #placegranvellecurbattantdufestival-1 ~ p, #placegranvellecurbattantdufestival-2 ~ p, #placegranvellecurbattantdufestival-3 ~ p, #scnographie ~ p, #unfestivalthique ~ p {
   padding-bottom: 0;
 }
 
@@ -102,13 +102,13 @@ h2 {
     padding-bottom: 5.5pt !important;
 }
 
-#placegranvellecurbattantdufestival ~ h5 strong, #placegranvellecurbattantdufestival-1 ~ h5 strong, #placegranvellecurbattantdufestival-2 ~ h5 strong, #placegranvellecurbattantdufestival-3 ~ h5 strong {
+#placegranvellecurbattantdufestival ~ h5 strong, #placegranvellecurbattantdufestival-1 ~ h5 strong, #placegranvellecurbattantdufestival-2 ~ h5 strong, #placegranvellecurbattantdufestival-3 ~ h5 strong, #unfestivalthique ~ h5 strong {
   padding-bottom: 0 !important;
 }
 
 
-#unfestivalthique ~ img {
-  object-position: 50% 50%;
+#unfestivalthique ~ p img {
+ object-position: 50% 50%;
  object-fit: cover;
  width: 45mm;
  height: 28.4mm;
@@ -141,6 +141,6 @@ h2 {
 }
 
 p + p {
-    padding-top: 0;
+    padding-top: 0 !important;
 }
 
