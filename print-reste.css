@@ -127,5 +127,20 @@ h2 {
   width: 132mm;
   font-size: 3.5pt;
   line-height: 5pt;
-
+  padding-left: 0;
 }
+
+
+#informationspratiques ~ p {
+  margin-left: -45mm;
+  border-left: 0;
+  column-count: 2;
+  column-gap: 4mm;
+  width: 132mm;
+  padding-left: 0;
+}
+
+p + p {
+    padding-top: 0;
+}
+
