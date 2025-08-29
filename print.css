@@ -133,8 +133,8 @@ h1 {
   font-family: 'Roboto Condensed';
   text-transform: uppercase;
   font-size: 10pt;
-  line-height: 11.5pt;
-  border-bottom: 1pt solid black;
+  line-height: 0pt;
+  /*border-bottom: 1pt solid black;*/
   padding-top: 0 !important;
   padding-bottom: 5.75pt;
   margin-top: 0;
@@ -154,7 +154,7 @@ h3 {
     font-size: 12pt;
     margin-top: 0;
     line-height: 11.5pt;
-    border-top: 1pt black solid;
+    /*border-top: 1pt black solid;*/
     padding-top: 5.75pt;
     margin-bottom: 0;
 }
@@ -189,6 +189,10 @@ h3 + h4 {
 
 p {
   margin: 0;
+}
+
+p + p {
+    padding-top: 0 !important;
 }
 
 /* -- COULEURS ----------------------------------- */
