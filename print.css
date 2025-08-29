@@ -141,8 +141,8 @@ h1 {
 }
 
 h2 {
-    font-size: 70pt;
-    line-height: 60pt;
+    font-size: 50pt;
+    line-height: 45pt;
     font-family: 'Frat';
     text-transform: uppercase;
     margin-bottom: 0 ;
@@ -152,7 +152,6 @@ h3 {
     text-transform: uppercase;
     font-family: 'Roboto Condensed';
     font-size: 12pt;
-    padding-top: 11pt;
     margin-top: 0;
     line-height: 11.5pt;
     border-top: 1pt black solid;
@@ -175,8 +174,8 @@ h5 {
     line-height: 11.5pt;
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 11.5pt;
-    font-family: 'Roboto Condensed';
+    padding-top: 11.5pt !important;
+    font-family: 'Roboto Condensed' !important;
 }
 
 
@@ -262,7 +261,7 @@ p {
 
 @page :nth(13){
   h1, h2, h3, strong {
-  color: #2b679d;
+  color:#2b679d;
   }
 }
 

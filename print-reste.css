@@ -24,6 +24,10 @@ p {
   padding-bottom: 11.5pt;
 }
 
+p + p {
+  padding-top: 0;
+  }
+
 /*h1 ~ p {
   padding-top: 0;
 }*/
@@ -32,23 +36,96 @@ p {
 
 h2 {
   padding-top: 17.25pt;
+/*  padding-bottom: 11.5pt;*/
+}
+
+/* -------- Page à page ------------*/
+
+
+
+#placegranvellecurbattantdufestival ~ p:has(img), #placegranvellecurbattantdufestival-2 ~ p:has(img), #placegranvellecurbattantdufestival-3 ~ p:has(img), #scnographie ~ p:has(img) {
+  margin-left: -45mm;
+  border-left: 0;
+  height: 75mm;
+}
+
+#placegranvellecurbattantdufestival-1 ~ p:has(img) {
+  margin-left: -45mm;
+  border-left: 0;
+  height: 55mm; 
+  padding-top: 11.5pt;
+}
+
+#placegranvellecurbattantdufestival ~ p img, #placegranvellecurbattantdufestival-2 ~ p img, #placegranvellecurbattantdufestival-3 ~ p img, #scnographie ~ p img{
+  width: 132mm;
+  height: 75mm;
+  float: left;
+  object-position: 50% 100%;
+}
+
+#placegranvellecurbattantdufestival-1 ~ p img {
+  width: 132mm;
+  height: 75mm;
+  float: left;
+  height: 55mm;
+  object-position: 50% 50%;
+}
+
+#placegranvellecurbattantdufestival-2 ~ p img {
+  object-position: 50% 50%;
+  margin-top: -6pt;
+}
+
+#placegranvellecurbattantdufestival-3 ~ p img {
+  height: 100mm;
+  object-position: 50% 50%;
+  margin-top: -6pt;
   padding-bottom: 11.5pt;
 }
 
-
-#mentionslgales ~ p {
-  font-size: 3.5pt;
-  line-height: 5pt;
+#scnographie ~ p img {
+  height: 110mm;
+  object-position: 50% 0%;
+  margin-top: 11.5pt;
 }
 
-@page :nth(9){
-  img {
+#placegranvellecurbattantdufestival ~ p, #placegranvellecurbattantdufestival-1 ~ p, #placegranvellecurbattantdufestival-2 ~ p, #placegranvellecurbattantdufestival-3 ~ p, #scnographie ~ p {
+  padding-bottom: 0;
+}
+
+
+#tempsforts + p {
+    margin-left: -45mm;
+    border-left: 0;
+    padding-left: 0;
+    padding-top: 5.75pt;
+    padding-bottom: 5.5pt !important;
+}
+
+#placegranvellecurbattantdufestival ~ h5 strong, #placegranvellecurbattantdufestival-1 ~ h5 strong, #placegranvellecurbattantdufestival-2 ~ h5 strong, #placegranvellecurbattantdufestival-3 ~ h5 strong {
+  padding-bottom: 0 !important;
+}
+
+
+#unfestivalthique ~ img {
+  object-position: 50% 50%;
  object-fit: cover;
  width: 45mm;
  height: 28.4mm;
  margin-left: -45mm;
   }
 
-  p:has(img) { 
-    float: left;
+#unfestivalthique ~ p:has(img) { 
+  float: left;
+}
+
+#mentionslgales ~ p {
+  margin-left: -45mm;
+  border-left: 0;
+  column-count: 3;
+  column-gap: 4mm;
+  width: 132mm;
+  font-size: 3.5pt;
+  line-height: 5pt;
+
 }
