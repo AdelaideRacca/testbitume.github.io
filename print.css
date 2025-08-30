@@ -191,10 +191,6 @@ p {
   margin: 0;
 }
 
-p + p {
-    padding-top: 0 !important;
-}
-
 /* -- COULEURS ----------------------------------- */
 
 /* h1:nth-of-type(n)*/
