@@ -61,11 +61,12 @@ display: none;
 display: none;
 }
 
-h1#spectacles, h1#spectacles2, h1#spectacles3, h1#spectacles4, h1#spectacles5, h1#spectacles6, h1#spectacles7, h1#spectacles8, h1#spectacles9, h1#spectacles10, h1#spectacles11, h1#spectacles12, h1#spectacles13, h1#spectacles14, h1#spectacles15, h1#spectacles16, h1#spectacles17, h1#spectacles18, h1#spectacles19, h1#spectacles20 {
+h1#spectacles, h1#spectacles2, h1#spectacles3, h1#spectacles4, h1#spectacles5, h1#spectacles6, h1#spectacles7, h1#spectacles8, h1#spectacles9, h1#spectacles10, h1#spectacles11, h1#spectacles12, h1#spectacles13, h1#spectacles14, h1#spectacles15, h1#spectacles16, h1#spectacles17, h1#spectacles18, h1#spectacles19, h1#spectacles20, h1#programmation-1, h5#programmation-1, h1#programmation-2 {
 display: none;
 padding: 0;
 margin: 0;
-border: 0;
+border: 0 !important;
+border-bottom: 0 !important;
 }
 
 
