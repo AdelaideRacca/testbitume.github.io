@@ -52,8 +52,8 @@ tr {
   border-top: 1px solid #2d306d;
 ;
   vertical-align: top;
-  font-size: 7.5pt;
-  line-height: 10.5pt;
+  font-size: 7.6pt;
+  line-height: 10.8pt;
 }
 td {
   padding: 1px 0 1px 2pt;
@@ -63,7 +63,7 @@ td:nth-child(1)  {
   font-family: 'Roboto Condensed';
   text-transform: uppercase;
   font-weight: 900;
-  width: 10%;
+  width: 12%;
 }
 td:nth-child(2) {
     font-family: 'Roboto Condensed';
@@ -75,15 +75,15 @@ td:nth-child(2) {
 td:nth-child(3) {
     font-family: 'Roboto Condensed';
     font-weight: 900;
-    color: #2d306d;
+    color: #bb6ba6;
     width: 22%;
 }
 td:nth-child(4) {
-    width: 5%;
+    width: 10%;
     color: #2d306d;
 }
 td:nth-child(5) {
-    width: 22%;
+    width: 17%;
     color: #2d306d;
 }
 td:nth-child(6) {
@@ -106,7 +106,6 @@ td.entete {
   margin-left: -45mm;
   border-left: 0;
   height: 75mm;
-  float: left;
 }
 
 
@@ -228,13 +227,23 @@ p + p {
     padding-top: 0 !important;
 }
 
-#programmation ~ table, #programmation-1 ~ table, #programmation-2 ~ table,  #programmation ~ p, #programmation-1 ~ p, #programmation-2 ~ p{
+#programmation ~ table, #programmation-1 ~ table, #programmation-2 ~ table,  #lebitumedesfamilles + p, #programmation-1 ~ p, #programmation-2 ~ p{
   margin-left: -45mm;
   border-left: 0;
   column-count: 1;
-  padding-left: 0;
   width: 132mm;
+  padding-left: 0;
+
 }
+
+#programmationbr + p {
+  column-count: 2 !important;
+  column-gap: 4mm;
+  margin-left: -45mm;
+  border-left: 0;
+  padding-left: 0;
+
+  }
 
 @page :nth(36) {
   p {
