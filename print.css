@@ -213,6 +213,10 @@ p {
   margin: 0;
 }
 
+p:last-child {
+  padding-bottom: 0;
+}
+
 /* -- COULEURS ----------------------------------- */
 
 /* h1:nth-of-type(n)*/

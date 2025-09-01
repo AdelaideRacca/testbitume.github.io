@@ -44,8 +44,13 @@ p + p {
 }*/
 
 /* --------- Tableau -------- */
+
+table {
+  font-family: 'Roboto Condensed';
+}
 tr {
-  border-top: 1px solid black;
+  border-top: 1px solid #2d306d;
+;
   vertical-align: top;
   font-size: 7.5pt;
   line-height: 10.5pt;
@@ -53,13 +58,36 @@ tr {
 td {
   padding: 1px 0 1px 2pt;
 }
-.col1 {
-  background-color: #c5b4f6;
+td:nth-child(1)  {
+  background-color: #fdf8e9;
+  font-family: 'Roboto Condensed';
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 10%;
 }
 td:nth-child(2) {
     font-family: 'Roboto Condensed';
     text-transform: uppercase;
     font-weight: 900;
+    color: #2596be;
+    width: 28%;
+}
+td:nth-child(3) {
+    font-family: 'Roboto Condensed';
+    font-weight: 900;
+    color: #2d306d;
+    width: 22%;
+}
+td:nth-child(4) {
+    width: 5%;
+    color: #2d306d;
+}
+td:nth-child(5) {
+    width: 22%;
+    color: #2d306d;
+}
+td:nth-child(6) {
+    width: 8%;
     color: #2d306d;
 }
 td.entete {

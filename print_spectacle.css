@@ -40,9 +40,9 @@ p:has(img) {
   height: 38mm;
 }
 
-/*p:last-child {
+p:last-child {
   padding-bottom: 0;
-}*/
+}
 
 h5 em {
   display: block;
@@ -86,7 +86,7 @@ h5 strong >> em {
   }
   h2 {
     font-size: 35pt;
-    line-height: 45pt;
+    line-height: 34pt;
   }
   img {
     width: 132mm;
@@ -123,7 +123,7 @@ h4#brutusyukus ~ p img {
 }
 
 h4#fabriceguyloprarock ~ p img {
-  object-position: 50% 14%;
+  object-position: 50% 24%;
 }
 
 h4#rondpointoulavisiondemile ~ p img {
