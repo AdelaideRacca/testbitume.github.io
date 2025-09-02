@@ -17,21 +17,7 @@
   }
 }
 
-/* PBM */
 
-.1colonne {
-    margin-left: -45mm;
-    border-left: 0;
-    height: 44mm:
-  }
-
-
-.1colonne img {
-    width: 132mm;
-    height: 44mm:
-    float: left;
-
-}
 
 
 
@@ -122,10 +108,10 @@ h1 {
     }
 
 @font-face {
-    font-family: 'Eau Sans Bold Oblique';
+    font-family: 'Eau Sans Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Eau Sans Bold Oblique'), url('font/eau_sans_bold_obl.woff') format'woff');
+    src: local('Eau Sans Bold'), url('font/eau_sans_bold.woff') format'woff');
     }
 
 
@@ -228,7 +214,7 @@ p:last-child {
 
 @page :nth(3){
   h1, h2, h3, strong {
-  color: #e46c34;
+  color: #2596be;
   }
 }
 @page :nth(4){
@@ -239,7 +225,7 @@ p:last-child {
 
 @page :nth(5){
   h1, h2, h3, strong {
-  color: #895ea3;
+  color: #2596be;
   }
 }
 

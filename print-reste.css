@@ -39,6 +39,16 @@ p + p {
   padding-top: 0;
   }
 
+@page :nth(2) {
+strong em {
+  display: inline !important;
+  font-family: 'Eau Sans Bold' !important;
+    line-height: 11.5pt !important;
+    font-size: 8.5pt !important;
+    transform: rotate(0) !important;
+  }
+}
+
 /*h1 ~ p {
   padding-top: 0;
 }*/
@@ -186,14 +196,6 @@ td.entete {
 }
 
 
-#tempsforts + p {
-    margin-left: -45mm;
-    border-left: 0;
-    padding-left: 0;
-    padding-top: 5.75pt;
-    padding-bottom: 5.5pt !important;
-}
-
 #placegranvellecurbattantdufestival ~ h5 strong, #placegranvellecurbattantdufestival-1 ~ h5 strong, #placegranvellecurbattantdufestival-2 ~ h5 strong, #placegranvellecurbattantdufestival-3 ~ h5 strong, #unfestivalthique ~ h5 strong {
   padding-bottom: 0 !important;
 }
@@ -214,7 +216,7 @@ td.entete {
 
 /* Pages 2 colonnes */
 
-#informationspratiques ~ p, #lassociation ~ p, #dito ~ p, #unfestivalthique ~ p, #scnographie ~ p {
+#informationspratiques ~ p, #lassociation ~ p, #dito ~ p, #unfestivalthique ~ p, #scnographie ~ p, #placegranvellecurbattantdufestival ~ p, #placegranvellecurbattantdufestival-1 ~ p, #placegranvellecurbattantdufestival-2 ~ p{
   margin-left: -45mm;
   border-left: 0;
   column-count: 2;
@@ -227,7 +229,68 @@ p + p {
     padding-top: 0 !important;
 }
 
-#programmation ~ table, #programmation-1 ~ table, #programmation-2 ~ table,  #lebitumedesfamilles + p, #programmation-1 ~ p, #programmation-2 ~ p{
+#tempsforts + p {
+   column-count: 1 !important;
+  width: 132mm !important;
+  padding-bottom: 5.25pt;
+}
+
+@page :nth(3) {
+  h4 {margin-bottom: 11.5pt}
+  strong em {
+    display: block !important;
+    float: initial;
+    text-transform: uppercase;
+    font-size: 11pt !important;
+    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed';
+    line-height: 11.5pt !important;
+    transform: rotate(0deg) !important;
+    font-style: normal;
+  }
+  #toujoursetencoreplusdespectacles ~ p {
+    padding-top: 5.25pt;
+    padding-bottom: 5.25pt;
+  }
+}
+@page :nth(4) {
+  h4 {margin-bottom: 11.5pt}
+  strong em {
+    display: block !important;
+    float: initial;
+    text-transform: uppercase;
+    font-size: 11pt !important;
+    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed';
+    line-height: 11.5pt !important;
+    transform: rotate(0deg) !important;
+    font-style: normal;
+  }
+  #toujoursetencoreplusdespectacles ~ p {
+    padding-top: 5.25pt;
+    padding-bottom: 5.25pt;
+  }
+}
+@page :nth(5) {
+  h4 {margin-bottom: 11.5pt}
+  strong em {
+    display: block !important;
+    float: initial;
+    text-transform: uppercase;
+    font-size: 11pt !important;
+    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed';
+    line-height: 11.5pt !important;
+    transform: rotate(0deg) !important;
+    font-style: normal;
+  }
+  #toujoursetencoreplusdespectacles ~ p {
+    padding-top: 5.25pt;
+    padding-bottom: 5.25pt;
+  }
+}
+
+#programmation ~ table, #programmation-1 ~ table, #programmation-2 ~ table,  #lebitumedesfamilles + p, #programmation-1 ~ p, #programmation-2 ~ p {
   margin-left: -45mm;
   border-left: 0;
   column-count: 1;
