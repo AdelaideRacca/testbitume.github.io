@@ -186,12 +186,12 @@ h3 {
 
 h4 {
     font-size: 25pt;
-    line-height: 25pt;
+    line-height: 27pt;
     font-family: 'Frat';
     text-transform: uppercase;
     border-bottom: 1px solid #2d306d;;
     margin-bottom: 0;
-    padding-bottom: 5.75pt;
+    padding-bottom: 3.75pt;
 }
 
 h5 {
@@ -222,7 +222,7 @@ p:last-child {
 
 @page :nth(2){
   h1, h2, h3, strong {
-  color: #e46c34;
+  color: #dd6fa9;
   }
 }
 

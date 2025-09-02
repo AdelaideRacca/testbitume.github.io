@@ -52,6 +52,7 @@ h5 strong{
   font-family: 'Roboto Condensed';
   text-transform: uppercase;
   padding-bottom: 5.75pt;
+  font-size: 11pt;
 /* display: block;
   padding-bottom: 5.75pt;
   font-family: frat;
@@ -59,8 +60,17 @@ h5 strong{
   font-size: 21.5pt !important;*/
 }
 
-h5 strong >> em {
+strong em {
   display: block !important;
+  font-family: frat;
+    line-height: 15.25pt;
+    font-size: 14pt;
+    transform: rotate(-15deg);
+
+}
+
+strong:has(em) {
+  padding-bottom: 0;
 }
 
 #spectacles ~ h3 {
