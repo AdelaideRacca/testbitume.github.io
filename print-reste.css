@@ -9,7 +9,7 @@
   @bottom-right { content: none }
 }
 
-@page :nth(36) {
+@page :nth(32) {
   img:first-child {display: none !important;}
   background-image: 
     url("https://md.picasoft.net/uploads/d75e1481-6223-4634-a984-21183de6f686.jpg");
@@ -97,8 +97,10 @@ td:nth-child(5) {
     color: #2d306d;
 }
 td:nth-child(6) {
-    width: 8%;
-    color: #2d306d;
+    font-family: 'Roboto Condensed';
+    font-weight: 900;
+    width: 5%;
+    color: #375c54;
 }
 td.entete {
     background-color: white;
@@ -107,6 +109,32 @@ td.entete {
     font-size: 20.5pt;
     padding-bottom: 11.5pt;
     color: #895ea3;}
+
+ 
+.merveilleuse td:nth-child(1)  {
+  width: 12%;
+}
+.merveilleuse td:nth-child(2) {
+  width: 50%;
+}
+.merveilleuse td:nth-child(3) {
+    color: #2d306d;
+    width: 10%;
+}
+.merveilleuse td:nth-child(4) {
+    width: 17%;
+    color: #2d306d;
+}
+.merveilleuse td:nth-child(5) {
+    width: 8%;
+    color: #2d306d;
+}
+.merveilleuse td:nth-child(5) {
+    width: 5%;
+    color: #2d306d;
+  }
+
+
 
 /* -------- Page à page ------------*/
 
@@ -125,7 +153,29 @@ td.entete {
  float: left;
   }
 
+@page :nth(5) {
+  p:nth-of-type(2) img {
+    width: 16mm;
+    height: 15mm;
+    float: inline-start;
+    margin-right: 3mm;
+  }
+}
 
+@page :nth(26) {
+  p:nth-of-type(2) img:nth-of-type(1), p:nth-of-type(2) img:nth-of-type(2) {
+    width: 3.5mm;
+    height: 3.5mm;
+    float: none;
+    margin-right: 1mm;
+  }
+}
+
+@page :nth(26) {
+  p:nth-of-type(2) {
+    margin-bottom: -10mm;
+  }
+}
 
 /* 2 images */
 #placegranvellecurbattantdufestival ~ p img, #placegranvellecurbattantdufestival-1 ~ p img, #placegranvellecurbattantdufestival-2 ~ p img {
@@ -143,9 +193,12 @@ td.entete {
 
 /* images en haut */
 
-#placegranvellecurbattantdufestival-3 ~ p img, #unfestivalthique ~ p img {
- /* margin-top: -6pt;*/
-  padding-bottom: 11.5pt;
+#unfestivalthique ~ p img, 
+#placegranvellecurbattantdufestival ~ p img, 
+#placegranvellecurbattantdufestival-2 ~ p img, 
+#placegranvellecurbattantdufestival-3 ~ p img 
+ {
+  padding-bottom: 11.5pt !important;
 }
 
 
@@ -173,7 +226,7 @@ td.entete {
 }
 
 #placegranvellecurbattantdufestival-2 ~ p img {
-  object-position: 100% 0%;
+  object-position: 100% 80%;
 }
 
 #placegranvellecurbattantdufestival-3 ~ p img, #placegranvellecurbattantdufestival-3 ~ p:has(img)  {
@@ -181,8 +234,13 @@ td.entete {
 }
 
 #scnographie ~ p img, #scnographie ~ p:has(img) {
-  height: 127mm;
-  object-position: 50% 0%;
+  height: 110mm;
+  object-position: 51% 0%;
+}
+
+#informationspratiques ~ p:nth-child(2) img {
+  width: 132mm;
+  object-position: 51% 0%;
 }
 
 /* espaces entre les paragraphes */
@@ -200,6 +258,9 @@ td.entete {
   padding-bottom: 0 !important;
 }
 
+h4#engoguetteaboussieres {
+  padding-top: 0 !important;
+}
 
 /* pages 3 colonnes*/
 
@@ -209,9 +270,12 @@ td.entete {
   column-count: 3;
   column-gap: 4mm;
   width: 132mm;
-  font-size: 3.5pt;
+  font-size: 3.9pt;
   line-height: 5pt;
   padding-left: 0;
+  padding-top: 5.75pt;  
+  padding-bottom: 5.75pt;
+
 }
 
 /* Pages 2 colonnes */
@@ -225,9 +289,6 @@ td.entete {
   padding-left: 0;
 }
 
-p + p {
-    padding-top: 0 !important;
-}
 
 #tempsforts + p {
    column-count: 1 !important;
@@ -247,10 +308,10 @@ p + p {
     line-height: 11.5pt !important;
     transform: rotate(0deg) !important;
     font-style: normal;
+    padding-top: 0;
   }
-  #toujoursetencoreplusdespectacles ~ p {
-    padding-top: 5.25pt;
-    padding-bottom: 5.25pt;
+  p:nth-child(5) {
+    padding-top: 0;
   }
 }
 @page :nth(4) {
@@ -265,10 +326,8 @@ p + p {
     line-height: 11.5pt !important;
     transform: rotate(0deg) !important;
     font-style: normal;
-  }
-  #toujoursetencoreplusdespectacles ~ p {
-    padding-top: 5.25pt;
-    padding-bottom: 5.25pt;
+    padding-top: 0;
+
   }
 }
 @page :nth(5) {
@@ -283,10 +342,7 @@ p + p {
     line-height: 11.5pt !important;
     transform: rotate(0deg) !important;
     font-style: normal;
-  }
-  #toujoursetencoreplusdespectacles ~ p {
-    padding-top: 5.25pt;
-    padding-bottom: 5.25pt;
+    padding-top: 0;
   }
 }
 
@@ -299,7 +355,7 @@ p + p {
 
 }
 
-#programmationbr + p {
+#programmationbr ~ p {
   column-count: 2 !important;
   column-gap: 4mm;
   margin-left: -45mm;
@@ -308,7 +364,7 @@ p + p {
 
   }
 
-@page :nth(36) {
+@page :nth(32) {
   p {
   margin-left: -45mm;
   border-left: 0;
@@ -319,7 +375,42 @@ p + p {
 
 }
 
-#unfestivalthique ~ p:has(img), #unfestivalthique ~ p img {
+#unfestivalthique ~ p:has(img), #unfestivalthique ~ p img, 
+#placegranvellecurbattantdufestival ~ p:has(img), 
+#placegranvellecurbattantdufestival ~ p img, 
+#placegranvellecurbattantdufestival-1 ~ p:has(img),
+#placegranvellecurbattantdufestival-1 ~ p img, 
+#placegranvellecurbattantdufestival-2 ~ p:has(img),
+#placegranvellecurbattantdufestival-2 ~ p img {
  column-count: 1;
  float: left;
 }
+
+@page :nth(5) {
+p:nth-child(3) {
+   column-count: 2 !important;
+  float: none;
+  padding-top: 11.5pt !important;
+  }
+}
+
+#tempsforts + p {
+  padding-bottom: 11.5pt !important;
+}
+
+@page :nth(26) {
+  p:nth-of-type(1) img {
+    object-position: 50% 25%;
+    width: 132mm !important;
+    height: 55mmm !important;
+    float: none;
+  }
+}
+
+@page :nth(26) {
+  #lespointsdaccueil + p {
+    height: 55mmm !important;
+    margin-bottom: 11.5pt;
+  }
+}
+

@@ -178,6 +178,7 @@ h4 {
     border-bottom: 1px solid #2d306d;;
     margin-bottom: 0;
     padding-bottom: 3.75pt;
+    padding-top: 3.75pt;
 }
 
 h5 {
@@ -198,9 +199,9 @@ p {
   margin: 0;
 }
 
-p:last-child {
+/*p:last-child {
   padding-bottom: 0;
-}
+}*/
 
 /* -- COULEURS ----------------------------------- */
 

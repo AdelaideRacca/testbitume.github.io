@@ -18,7 +18,7 @@ h5{
 
 p {
     border-left: 1px solid #2d306d;;
-    padding: 11.5pt 0 11.5pt 11.5pt;
+    padding: 11.5pt 0 5.25pt 11.5pt;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -74,9 +74,8 @@ strong:has(em) {
   padding-bottom: 0;
 }
 
-#spectacles ~ h3 {
-  margin-top: 0;
-}
+
+
 
 /* --------- Page à page -------- */
 
