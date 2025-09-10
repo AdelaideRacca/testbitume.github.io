@@ -120,6 +120,7 @@ td.entete {
 .merveilleuse td:nth-child(3) {
     color: #2d306d;
     width: 10%;
+    font-weight: normal;
 }
 .merveilleuse td:nth-child(4) {
     width: 17%;
@@ -178,13 +179,13 @@ td.entete {
 }
 
 /* 2 images */
-#placegranvellecurbattantdufestival ~ p img, #placegranvellecurbattantdufestival-1 ~ p img, #placegranvellecurbattantdufestival-2 ~ p img {
+#placegranvellecurbattantdufestival ~ p img, #placegranvellecurbattantdufestival-2 ~ p img {
   width: 66mm;
   height: 75mm;
   float: left;
 }
 /* 1 image */
-#placegranvellecurbattantdufestival-3 ~ p img, #scnographie ~ p img{
+#placegranvellecurbattantdufestival-1 ~ p img, #placegranvellecurbattantdufestival-3 ~ p img, #scnographie ~ p img{
   width: 132mm;
   height: 75mm;
   float: left;
@@ -221,7 +222,7 @@ td.entete {
 }
 
 #placegranvellecurbattantdufestival-1 ~ p img, #placegranvellecurbattantdufestival-1 ~ p:has(img) {
-  height: 70mm;
+  height: 100mm;
   object-position: 50% 50%;
 }
 
@@ -270,7 +271,7 @@ h4#engoguetteaboussieres {
   column-count: 3;
   column-gap: 4mm;
   width: 132mm;
-  font-size: 3.9pt;
+  font-size: 3.6pt;
   line-height: 5pt;
   padding-left: 0;
   padding-top: 5.75pt;  
@@ -388,9 +389,10 @@ h4#engoguetteaboussieres {
 
 @page :nth(5) {
 p:nth-child(3) {
-   column-count: 2 !important;
+  column-count: 2 !important;
   float: none;
   padding-top: 11.5pt !important;
+  height: 110mm;
   }
 }
 
